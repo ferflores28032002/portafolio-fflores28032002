@@ -1,4 +1,4 @@
-import './header.scss';
+import "./header.scss";
 import { useTranslation } from "react-i18next";
 import { BtnLenguajes } from "../btn-es-en/BtnLenguajes";
 
@@ -8,7 +8,9 @@ export const Header = () => {
   return (
     <div className="container position-relative">
       <header className="header">
-        <div className="logo">{t("header.logo")}</div>
+        <a href="#" className="logo">
+          <i className="fa-solid fa-user pe-2"></i> {t("header.logo")}{" "}
+        </a>
 
         <nav className="nav">
           <a href="#"> {t("header.navbar.Inicio")}</a>
@@ -17,7 +19,9 @@ export const Header = () => {
           <a href="#"> {t("header.navbar.Proyectos")}</a>
           <a href="#"> {t("header.navbar.contactame")}</a>
 
-          <button><i className="fa-solid fa-moon"></i></button>
+          <button>
+            <i className="fa-solid fa-moon"></i>
+          </button>
 
           <BtnLenguajes name="Es" />
           <BtnLenguajes name="En" />

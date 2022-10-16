@@ -20,6 +20,20 @@
     h3 {
         font-size: 2.5rem;
         font-weight: 600;
+        color: var(--title-color);
+    }
+
+    .caja-imgs{
+        @include display(center,center);
+        background-color: var(--first-color);
+        border-radius: 50%;
+        padding: 0.6rem 4rem;
+
+        img {
+            border-radius: 50%;
+
+        }
+
     }
 }
 

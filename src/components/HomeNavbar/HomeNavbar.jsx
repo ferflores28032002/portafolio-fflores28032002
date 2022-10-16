@@ -1,6 +1,7 @@
 import React from "react";
 import "./HomeNavbar.scss";
 import { useTranslation } from "react-i18next";
+import img from "../../assets/imgs/perfil.png";
 
 export const HomeNavbar = () => {
   const { t } = useTranslation("global");
@@ -9,9 +10,15 @@ export const HomeNavbar = () => {
     <div className={"row container"} id="contenedor">
       <div className="col-md-2">
         <div className="d-flex flex-column" id="info">
-          <i className="fa-brands fa-facebook"></i>
-          <i className="fa-brands fa-whatsapp"></i>
-          <i className="fa-brands fa-github"></i>
+          <a href="https://github.com/ferflores28032002">
+            <i className="fa-brands fa-github"></i>
+          </a>
+          <a href="#">
+            <i className="fa-brands fa-facebook"></i>
+          </a>
+          <a href="#">
+            <i className="fa-brands fa-whatsapp"></i>
+          </a>
         </div>
       </div>
 
@@ -23,11 +30,15 @@ export const HomeNavbar = () => {
 
         <button className="btn-cv">
           {t("info.btn")}
-          <i class="ps-2 fa-solid fa-download"></i>
+          <i className="ps-2 fa-solid fa-download"></i>
         </button>
       </div>
 
-      <div className="col-md-5"></div>
+      <div className="col-md-5">
+        <div className="caja-imgs">
+          <img src={img} alt="img-presentacion" />
+        </div>
+      </div>
     </div>
   );
 };
