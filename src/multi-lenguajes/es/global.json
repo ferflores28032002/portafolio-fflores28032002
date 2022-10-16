@@ -1,7 +1,22 @@
 {
 
-    "logo": "Hola Mundo",
-    "title": "Soy desarrollador frontend"
+    "header": {
+        "logo": "Fernando",
+        "navbar": {
+            "Inicio":"Inicio",
+            "sobre mi":"sobre mi",
+            "Habilidades":"Habilidades",
+            "Proyectos":"Proyectos",
+            "contactame":"contactame"
+        }
+    },
+
+    "info":{
+        "name": "Hola, soy Fernando",
+        "xp": "Desarrollador Frontend",
+        "des": "Experiencia en el desarrollo web, me apasiona la programación",
+        "btn": "Descargar CV"
+    }
 
 
 }

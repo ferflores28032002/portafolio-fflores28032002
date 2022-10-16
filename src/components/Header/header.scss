@@ -1,0 +1,27 @@
+@import '.../../../../assets/css/mixin';
+
+.header {
+    @include display(space-between, center);
+    width: 100%;
+    @include position();
+    padding: 1.2rem 0rem;
+
+    .logo {
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+    
+    .nav {
+        @include display(space-between, center);
+        font-size: 1.1rem;
+        gap: 1.4rem;
+
+        a {
+            color: var(--text-color);
+        }
+    
+    }
+}
+
+
+

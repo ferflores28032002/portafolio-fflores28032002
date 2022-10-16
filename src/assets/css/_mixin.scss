@@ -1,0 +1,11 @@
+@mixin display($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin position() {
+    position: absolute;
+    left: 0;
+    top: 0;
+}

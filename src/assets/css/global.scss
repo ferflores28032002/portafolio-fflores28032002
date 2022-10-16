@@ -1,0 +1,30 @@
+
+// Configuraciones globales del proyecto
+
+@import './mixin';
+@import './variables';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+html, body {
+    font-family: var(--font-famiyly);
+    background: var(--bg-body);
+}
+
+a {
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+button{
+    outline:none;
+    border: none;
+}
