@@ -3,10 +3,16 @@
 #contenedor {
     @include display(center, center);
     height: 100vh;
+    color: white;
 
     #info{
         font-size: 1.6rem;
         gap:1rem;
+
+        i{
+            color: white;
+
+        }
 
         #github{
             color: #000;
@@ -25,10 +31,10 @@
     h3 {
         font-size: 2.1rem;
         font-weight: 600;
-        color: var(--title-color);
+        color: white;
 
         #typewriter{
-            color: var(--first-color)
+            color: white
         }
     }
 
