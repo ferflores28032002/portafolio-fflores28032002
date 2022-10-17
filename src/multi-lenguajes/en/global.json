@@ -1,7 +1,11 @@
 {
 
     "header": {
-        "logo": "Fernando",
+        "logo": {
+            "0": "Hi, I' am",
+            "1": "Fernando",
+            "2": "Developer Web"
+        },
         "navbar": {
             "Inicio":"Home",
             "sobre mi":"About",
@@ -13,7 +17,7 @@
     "info":{
         "name": "Hi, I' am Fernando",
         "xp": "Frontend Developer",
-        "des": "Experience in web development, I am passionate about programming",
+        "des": "A front-end developer works the user interface from the code point of view, so that interaction with the system is possible. Therefore, it takes care of the visual part of the web        ",
         "btn": "Download cv"
     }
 

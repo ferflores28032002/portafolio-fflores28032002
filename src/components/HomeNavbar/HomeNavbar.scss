@@ -5,28 +5,37 @@
     height: 100vh;
 
     #info{
-        font-size: 1.7rem;
+        font-size: 1.6rem;
         gap:1rem;
+
+        #github{
+            color: #000;
+        }
     }
 
     .btn-cv{
-        padding: 1rem 1.2rem;
+        padding: 1.1rem 1.4rem;
         background-color: var(--first-color);
         color: white;
-        border-radius: 0.7rem;
+        border-radius: 120px;
         font-weight: 500;
+        animation: animate 3s linear infinite;
     }
 
     h3 {
-        font-size: 2.5rem;
+        font-size: 2.1rem;
         font-weight: 600;
         color: var(--title-color);
+
+        #typewriter{
+            color: var(--first-color)
+        }
     }
 
     .caja-imgs{
         @include display(center,center);
         background-color: var(--first-color);
-        border-radius: 50%;
+        border-radius: 30% 50% 30% 48%;
         padding: 0.6rem 4rem;
 
         img {
@@ -37,3 +46,56 @@
     }
 }
 
+
+
+@keyframes animate {
+    0%{
+        box-shadow: 0 0 0 0 var(--first-color);
+    }
+    40%{
+        box-shadow: 0 0 0 30px  rgb(255, 193, 7, 0);
+    }
+    80%{
+        box-shadow: 0 0 0 20px rgb(255, 193, 7, 0);
+    }
+    100%{
+        box-shadow: 0 0 0 0 rgb(255, 193, 7, 0);
+    }
+}
+
+@media (max-width: 800px){
+    
+#contenedor {
+    @include display(none, none);
+    height: 100vh;
+
+    #info{
+        font-size: 2rem;
+        gap:1rem;
+        flex-direction: row !important;
+        justify-content: center;
+    }
+
+    .btn-cv{
+        padding: 1rem 1.3rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    .caja-imgs{
+        @include display(center,center);
+        background-color: var(--first-color);
+        border-radius: 50%;
+        padding: 0rem 0rem 2rem 0rem;
+
+        img {
+            border-radius: 50%;
+            width: 100%;
+            height: 80%;
+        }
+
+    }
+}
+}

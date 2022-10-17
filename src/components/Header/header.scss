@@ -3,25 +3,88 @@
 .header {
     @include display(space-between, center);
     width: 100%;
-    @include position();
-    padding: 1.2rem 0rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 1.2rem 7.5rem;
+
 
     .logo {
-        font-size: 1.4rem;
+        font-size: 1.1rem;
         font-weight: 500;
+        z-index: 900;
+        color: #ffffff;
+        background-color: var(--first-color);
+        padding: 0.6rem 1.3rem;
+        border-radius: 100px
     }
     
     .nav {
         @include display(space-between, center);
         font-size: 1.1rem;
-        gap: 1.4rem;
-
+        gap: 1.6em;
+        
         a {
+            padding: 0.3rem 0.5rem;
             color: var(--text-color);
+            
+            &:hover{
+                padding: 0.3rem 0.5rem;
+                background-color: var(--first-color);
+                color: #ffffff;
+                border-radius: 20px;
+                transition: 0.8s ease;
+            }
         }
+
+
     
     }
 }
 
+.header.movimiento{
+    z-index: 1000;
+    background-color: #ffffff;
+}
 
 
+@media (max-width: 800px){
+    
+    button.boton {
+        display: block !important;
+    }
+    #menu-responsive{
+        display: none;
+        // width: 100%;
+        // height: 100vh;
+        // background-color: red;
+        // color: white;
+
+    }
+    // #menu{
+    //     display: block;
+    //     position: fixed;
+    //     left: 0;
+    //     top: 0;
+    //     width: 100%;
+    //     height:100vh;
+    //     color: white;
+    //     background-color: #000000;
+    //     z-index: 20000;
+        
+    // }
+    .logo {
+        font-size: 1.1rem;
+        padding: 0.6rem 1.3rem;
+        border-radius: 100px
+    }
+    
+    .header {
+        @include display(space-between, center);
+        width: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        padding: 1rem 1.5rem 1rem 1.2rem;
+    }
+}

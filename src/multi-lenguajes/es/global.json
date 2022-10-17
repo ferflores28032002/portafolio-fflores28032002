@@ -1,7 +1,11 @@
 {
 
     "header": {
-        "logo": "Fernando",
+        "logo": {
+            "0": "Hola, soy",
+            "1": "Fernando",
+            "2": "Desarrollador Web"
+        },
         "navbar": {
             "Inicio":"Inicio",
             "sobre mi":"sobre mi",
@@ -13,8 +17,8 @@
 
     "info":{
         "name": "Hola, soy Fernando",
-        "xp": "Desarrollador Frontend",
-        "des": "Experiencia en el desarrollo web, me apasiona la programación",
+        "xp": "Desarrollador Front end",
+        "des": "Un desarrollador front-end trabaja la interfaz de usuario desde el punto de vista del código, para que la interacción con el sistema sea posible. Por lo tanto, se encarga de la parte visual de la web",
         "btn": "Descargar CV"
     }
 

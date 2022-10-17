@@ -28,4 +28,11 @@ li{
 button{
     outline:none;
     border: none;
+    background-color: transparent;
+}
+
+@media (max-width: 800px){
+    body {
+        padding-top: 5rem;
+    }
 }
